@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>OHW21 Projects - OceanHackWeek'21 Resources</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="../../extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "OHW21 Projects";
+    var mkdocs_page_input_path = "projects/projectlist.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> OceanHackWeek'21 Resources</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Overview</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about_ohw/">About OHW</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../conduct/">Code of Conduct</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Logistics</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../logistics/overview/">Logistics Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../schedule/">Schedule</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../logistics/getting_help/">Getting Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../logistics/coffeebreaks/">Coffee Breaks</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Preparation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prep/git/">Git</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prep/github/">GitHub</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prep/jupyterhub/">Jupyter and the Hub</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prep/conda/">Conda, Python, R</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tutorials</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/getting_started/">Getting Started</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Projects</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../overview/">Project Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../steps/">Hacking at OHW21</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">OHW21 Projects</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#characterising-acoustic-sound-scattering-layers">Characterising Acoustic Sound Scattering Layers</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#interactive-visualization-of-open-access-glider-data">Interactive visualization of open access glider data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cmip-analysis-ready-data-ard-workflow-turning-big-climate-projection-data-into-useful-inputs-for-modelling-or-analysis">CMIP analysis ready data (ARD) workflow : turning big climate projection data into useful inputs for modelling or analysis</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#matching-open-source-open-environmental-data-to-tagged-species-data">Matching open source open environmental data to tagged species data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#predicting-ocean-deep-currents-by-satellite-data">Predicting ocean deep currents by satellite data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pull-all-ocean-repositories-in-the-world-to-be-able-to-subset">Pull all ocean repositories in the world to be able to subset</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#high-frequency-radar-data-to-measure-coastal-currents">High frequency radar data to measure coastal currents</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#use-drone-imagery-of-turtles-classify-using-neural-network">Use drone imagery of turtles, classify using neural network</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#continue-ohw2020-project-on-obis-and-mpas">Continue OHW2020 project on OBIS and MPAs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adding-scale-to-underwater-depth-maps-from-monocular-vision">Adding scale to underwater depth maps from monocular-vision</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#developing-pyworms-package-to-improve-functionality-and-usefulness">Developing pyworms package to improve functionality and usefulness</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#currentparticle-back-tracer">Current/particle back-tracer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#determining-the-degree-to-which-nutrient-availability-and-microbial-activity-is-driven-by-geologic-events">Determining the degree to which nutrient availability and microbial activity is driven by geologic events</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#seafloorhub-web-aggregatorpython-or-r-package-for-oceanographic-seafloor-data">SeafloorHUB - Web Aggregator/Python or R package for oceanographic seafloor data</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">OceanHackWeek'21 Resources</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Projects &raquo;</li>
+        
+      
+    
+    <li>OHW21 Projects</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/oceanhackweek/ohw-resources/edit/master/docs/projects/projectlist.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="project-list-2021">Project List 2021</h1>
+<h2 id="characterising-acoustic-sound-scattering-layers">Characterising Acoustic Sound Scattering Layers</h2>
+<ul>
+<li>Project leads: Nick M</li>
+<li>Presenter: </li>
+<li><a href="https://github.com/oceanhackweek/ohw21-proj-bioacoustics">GitHub</a></li>
+</ul>
+<p>Acoustic data contains information about organisms in the scattering layers. For example, diel vertical migration behavior is visible. This project aims to build tools for classifying and interpreting this data.</p>
+<h2 id="interactive-visualization-of-open-access-glider-data">Interactive visualization of open access glider data</h2>
+<ul>
+<li>Project leads: Dhruv, Alison</li>
+<li>Presenter:</li>
+<li>GitHub (needs link)</li>
+</ul>
+<p>The goal of this project is to show how interactive visualization tools from the <a href="https://holoviz.org/">Holoviz ecosystem</a> can be combined with glider data access tools (<a href="https://github.com/ioos/erddapy">erddapy</a>, <a href="https://github.com/ioos/gliderpy">gliderpy</a>) to quickly create a visualization dashboard that can help users intuitively explore glider data.</p>
+<h2 id="cmip-analysis-ready-data-ard-workflow-turning-big-climate-projection-data-into-useful-inputs-for-modelling-or-analysis">CMIP analysis ready data (ARD) workflow : turning big climate projection data into useful inputs for modelling or analysis</h2>
+<ul>
+<li>Project leads: Thomas, Paige, Julius</li>
+<li>Presenter: </li>
+<li><a href="https://github.com/oceanhackweek/ohw21-proj-cmip-ard">GitHub</a></li>
+</ul>
+<p>CMIP (Climate Model Intercomparison Project) is a collection of global climate models and is a foundation of global climate projections, helping society better understand the choices we must either make or the impact the communities and industries of our children will face. However there are often barriers (big data, file format, coding familiarity – R vs Python, technical terminology) and challenges (Do I need to dedrift the data? What is this calendar on that model? ) for new users or specific disciplines, such as the marine ecology / ecological modelling community</p>
+<h2 id="matching-open-source-open-environmental-data-to-tagged-species-data">Matching open source open environmental data to tagged species data</h2>
+<ul>
+<li>Project leads: Jackie</li>
+<li>Presenter:</li>
+<li><a href="https://github.com/oceanhackweek/OHW21_proj_tag_data">GitHub</a></li>
+</ul>
+<p>Optimize a tool for making environmental data (ocean velocity, SST) in an easy-to-use format for ecological research (I.e. make mapped data easier to load into R, format data with recognizable variables that are measured by GPS tags)</p>
+<h2 id="predicting-ocean-deep-currents-by-satellite-data">Predicting ocean deep currents by satellite data</h2>
+<ul>
+<li>Project leads: Iury</li>
+<li>Presenter:</li>
+<li><a href="https://github.com/oceanhackweek/ohw21-proj-deep-currents">GitHub</a></li>
+</ul>
+<p>Moorings are expensive and lack long term overage. Deep water oceanography is important. Explore trends &amp; variability from satellites, train a machine learning model to predict deep-water dynamics.</p>
+<h2 id="pull-all-ocean-repositories-in-the-world-to-be-able-to-subset">Pull all ocean repositories in the world to be able to subset</h2>
+<ul>
+<li>Project leads: Steve</li>
+<li>Presenter:</li>
+<li>[GitHub] (needs link)</li>
+</ul>
+<p>There are so many data repositories already. Hard to search them all. If we wait too long, it will be machine learning solving this for us. </p>
+<h2 id="high-frequency-radar-data-to-measure-coastal-currents">High frequency radar data to measure coastal currents</h2>
+<ul>
+<li>Project leads: Teresa</li>
+<li>Presenter:</li>
+<li><a href="https://github.com/oceanhackweek/ohw21-proj-coastal-radar">GitHub</a></li>
+</ul>
+<p>List of ideas: </p>
+<ul>
+<li>QC: Use Machine learning methods to filter out interference <ul>
+<li>PCA to decompose spectrum images into signal and noise components</li>
+<li>Ensemble averaging over entire bin to factor out range-dependent artifacts for filter development</li>
+<li>Apply basis transforms in spectral domain to remove broad noise artifacts while preserving sharper features.</li>
+</ul>
+</li>
+<li>Analyzing surface circulation data to plot circulation along with other datasets</li>
+</ul>
+<h2 id="use-drone-imagery-of-turtles-classify-using-neural-network">Use drone imagery of turtles, classify using neural network</h2>
+<ul>
+<li>Project leads: Johnathan</li>
+<li>Presenter:</li>
+<li><a href="https://github.com/oceanhackweek/ohw21-proj-drone-turtles">GitHub</a></li>
+</ul>
+<p>Use neural networks and pytorch to classify images of turtles. </p>
+<h2 id="continue-ohw2020-project-on-obis-and-mpas">Continue OHW2020 project on OBIS and MPAs</h2>
+<ul>
+<li>Project leads: Enrique, Lei</li>
+<li>Presenter:</li>
+<li><a href="https://github.com/oceanhackweek/ohw20-proj-species-marine-protected-areas">GitHub</a></li>
+</ul>
+<p>OBIS record from polygons (e.g. MPA or any polygon) together with satellite data &amp; visualize on a map, and select areas, and upload new species abundance data, and do some statistics correlating with MPA properties.</p>
+<h2 id="adding-scale-to-underwater-depth-maps-from-monocular-vision">Adding scale to underwater depth maps from monocular-vision</h2>
+<ul>
+<li>Project leads: Yelena Randall</li>
+<li>Presenter:</li>
+<li>[GitHub] (needs link)</li>
+</ul>
+<p>Project ideas: </p>
+<ul>
+<li>Fuse monocular images and IMU data to create scaled depth maps using structure from motion</li>
+<li>Validate using known-size targets that were placed in the underwater scene</li>
+</ul>
+<p>Applications:</p>
+<ul>
+<li>Estimation and monitoring coral reef’s volume and surface area.</li>
+<li>Can be used with deep sea vents, rocky reefs, any benthic habitat of interest </li>
+<li>Estimation of bottom rugosity with important implications for internal waves’ generation.</li>
+</ul>
+<h2 id="developing-pyworms-package-to-improve-functionality-and-usefulness">Developing pyworms package to improve functionality and usefulness</h2>
+<ul>
+<li>Project leads: Diana L-G </li>
+<li>Presenter:</li>
+<li>[GitHub] (needs link)</li>
+</ul>
+<p>Project ideas: </p>
+<ul>
+<li>Standardizing species names is a key component of sharing and integrating biological data sets</li>
+<li>A Python package already exists to check names against WoRMS, but it has a number of shortcomings:<ul>
+<li>Functions that are incomplete</li>
+<li>Returns data in a format that is not easily useable by common tools (e.g. pandas)</li>
+<li>Doesn’t easily handle problems when species names are not matched</li>
+</ul>
+</li>
+</ul>
+<h2 id="currentparticle-back-tracer">Current/particle back-tracer</h2>
+<ul>
+<li>Project leads: Adam K</li>
+<li>Presenter:</li>
+<li>[GitHub] (needs link)</li>
+</ul>
+<p>Idea: Provide a tool/package that can take a location on the ocean and a period of time, then back-trace where it would have been at that previous point in time based on winds/currents (this tool might exist). </p>
+<p>Applications: Could be used to re-trace where in-situ samples were taken in open ocean surveys to a common date/time for preserving temporal stationarity in ocean states. </p>
+<p>Motivation: Currents transport plankton, nutrients, fishes in the time it takes a ship to move between samples or as a glider or saildrone passes through it. Most surfaces produced from point observations ignore the drift that occurred between measurements.  This becomes increasingly important when discussing lead-times or lag periods between ocean states and biological observations.</p>
+<h2 id="determining-the-degree-to-which-nutrient-availability-and-microbial-activity-is-driven-by-geologic-events">Determining the degree to which nutrient availability and microbial activity is driven by geologic events</h2>
+<ul>
+<li>Project leads: Laura R</li>
+<li>Presenter:</li>
+<li>[GitHub] (needs link)</li>
+</ul>
+<p>Project ideas: </p>
+<ul>
+<li>Use seismic data, elemental data, and phylogenetic analysis/satellite imagery of blooms</li>
+<li>
+<p>Could help inform what variables are relevant for monitoring geologic activity over time and elucidating how this impacts habitability --could have applications for ocean world exploration (e.g. Enceladus)</p>
+</li>
+<li>
+<p>Sampling high-resolution model output as if by an in situ platform (ship, glider, mooring, etc.#ohw21-proj-model-subsampling</p>
+</li>
+<li>Compare sub-sampled model data to original data to understand what is missed through the sampling</li>
+<li>User-customizable sampling parameters (e.g., ship or glider sampling pattern, depth of sensors, etc.) </li>
+<li>Would be maybe possible to do this using a wrapper around xarray, as it does have some features to extract non-uniform grid (http://xarray.pydata.org/en/stable/user-guide/interpolation.html#advanced-interpolation would be good starting point).</li>
+</ul>
+<h2 id="seafloorhub-web-aggregatorpython-or-r-package-for-oceanographic-seafloor-data">SeafloorHUB - Web Aggregator/Python or R package for oceanographic seafloor data</h2>
+<ul>
+<li>Project leads: Stanley</li>
+<li>Presenter:</li>
+<li>[GitHub] (needs link)</li>
+</ul>
+<p>Not enough common computational tools regarding data in the deep sea/or coastal marine system. While researchers are interesting in understanding the role of biological pump in the carbon uptake in the ocean, or the contribution of bottom flux from seafloor to the ocean (which fuel upwelling and nutrient regeneration), or the role of trace metal that is fundamentally altering our understanding of the ocean biogeochemical - common open source tools and repo are still behind standard we expect in the field. Often we still use manual ways to find and get the data. I propose we fix that and do it automatically. </p>
+<p>The idea is to create a common hub where all things sediment/seafloor lives. For now I’m thinking of R shiny or other python stack like streamlit/flask. I think of the hub as a mining hub for seafloor data whether you are interested in geochemistry or ecology. You go in and get your data. </p>
+<!-- 
+##
+
+- Project leads:
+- Presenter:
+- [GitHub]()
+ -->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../steps/" class="btn btn-neutral" title="Hacking at OHW21"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/oceanhackweek/ohw-resources/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../steps/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
