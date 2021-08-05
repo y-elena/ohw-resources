@@ -87,7 +87,7 @@ OBIS record from polygons (e.g. MPA or any polygon) together with satellite data
 
 
 ## Adding scale to underwater depth maps from monocular-vision
-
+--->>> Please delete this entry, we dropped the project because there wasn't enough interest, thanks!
 - Project leads: Yelena Randall
 - Presenter:
 - [GitHub] (needs link)
